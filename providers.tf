@@ -9,11 +9,14 @@ provider "aws" {
 }
 
 
-# For Remote State
-# terraform {
-#   backend "s3" {
+terraform {
+   backend "s3" {
 
+    bucket = "tf-eks-state-store"
+    key = "ec2/terraform.tfstate"
+    region = "us-east-1"
 
+    dynamodb_table = "ec2-vpc-table"
     
-#   }
+  }
 }

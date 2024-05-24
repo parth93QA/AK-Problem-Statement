@@ -7,8 +7,4 @@ terraform {
         version = "~>5.40.0"
     }
   }
-  # BACKEND CONFIG FOR REMOTE STATE CURRENTLY USING LOCAL STATE
-#   backend "s3" {
-      
-#   }
 }
