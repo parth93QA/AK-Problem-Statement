@@ -35,3 +35,6 @@ variable "vpc_region" {
   default = "us-east-1"
 }
 
+variable "azs" {
+  type = list(string)
+}
