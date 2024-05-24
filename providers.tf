@@ -17,6 +17,5 @@ terraform {
     region = "us-east-1"
 
     dynamodb_table = "ec2-vpc-table"
-    
   }
 }
